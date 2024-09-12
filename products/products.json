@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "basic-training",
+      "title": "Basic training",
+      "description": "Access to all online resources: meal plans, workout videos, and progress tracking.",
+      "fullDescription": "Access to all online resources: meal plans, workout videos, and progress tracking.\nWeekly check-ins and virtual Q&A sessions with our experts.\nIncludes the Belly Reduction Program exercises and guidance.",
+      "price": "5000",
+      "oldPrice": "10000",
+      "quantity": 1,
+      "currency": "KES",
+      "sku": "50",
+      "outOfStock": false,
+      "isFeatured": false,
+      "categories": [],
+      "images": [{ "url": "/images/9574faab966ba1124f6412d792eaee18.jpg" }],
+      "created": 1725421440617,
+      "updated": 1725421440617,
+      "isDefault": false
+    }
+  ],
+  "categories": []
+}

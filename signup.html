@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Form</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .signup-form {
+        background-color: rgb(179, 175, 175);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+        align-items: center;
+      }
+      .signup-form h2 {
+        margin-bottom: 20px;
+      }
+      .signup-form label {
+        display: block;
+        margin-bottom: 8px;
+        margin: 0 5%;
+      }
+      .signup-form form {
+        padding: 0 auto;
+      }
+      .signup-form input,
+      .signup-form select {
+        width: 90%;
+        margin: 0 5%;
+        padding: 15px;
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 2px solid #000;
+        border-radius: none;
+        outline: none;
+        box-sizing: border-box;
+      }
+      .signup-form button {
+        width: 90%;
+        padding: 15px;
+        margin: 0 5%;
+        background-color: #f1900c;
+        color: white;
+        border: none;
+        cursor: pointer;
+        box-sizing: border-box;
+      }
+      .signup-form button:hover {
+        background-color: #000000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="signup-form">
+      <h2>Signup Form</h2>
+      <form action="/submit" method="POST">
+        <label for="firstname">First Name</label>
+        <input type="text" id="firstname" name="firstname" required />
+
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" name="lastname" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="membership">Membership Type</label>
+        <select name="membership" id="membership-type">
+          <option value="basic" selected>Basic</option>
+          <option value="premium">Premium</option>
+          <option value="elite">Elite</option>
+        </select>
+
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </body>
+</html>
